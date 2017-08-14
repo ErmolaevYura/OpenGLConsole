@@ -1,0 +1,96 @@
+{
+	"texture": [
+		{ "name": "wall", "filename": "wall.jpg" },
+		{ "name": "awesomeface", "filename": "awesomeface.png" },
+		{ "name": "window", "filename": "window.png" },
+		{ "name": "container", "filename": "container.png" },
+		{ "name": "container_specular", "filename": "container_specular.png" },
+	  { "name": "texture", "filename": "texture.jpg" },
+	  { "name": "heightmap", "filename":  "texture_height.jpg" },
+    { "name": "snow", "filename": "snow.jpg" }
+  ],
+  "skybox": [
+    {
+      "name": "skybox1",
+      "filenames": [ "right.jpg", "left.jpg", "top.jpg", "bottom.jpg", "back.jpg", "front.jpg" ]
+    },
+    {
+      "name": "jajdesert1",
+      "filenames": [ "jajdesert1_rt.jpg", "jajdesert1_lf.jpg", "jajdesert1_up.jpg", "jajdesert1_dn.jpg", "jajdesert1_bk.jpg", "jajdesert1_ft.jpg" ]
+    },
+    {
+      "name": "jajlands1",
+      "filenames": [ "jajlands1_rt.jpg", "jajlands1_lf.jpg", "jajlands1_up.jpg", "jajlands1_dn.jpg", "jajlands1_bk.jpg", "jajlands1_ft.jpg" ]
+    }
+  ],
+	"material": [
+		{
+			"name": "container", 
+			"filenames": [
+				{ "filename": "container.png", "type": "diffuse" },
+				{ "filename": "container_specular.png", "type": "specular" }
+			]
+		}
+	],
+	"shader": [
+		{ "name": "Colored", "filenames": [ "vertex/Vertices.vert", "fragment/Colored.frag" ] },
+		{ "name": "Textured", "filenames": [ "vertex/Vertices.vert", "fragment/Textured.frag" ] },
+    {
+      "name": "SimpleLight",
+      "filenames": [
+        "vertex/Vertices.vert",
+        "fragment/Fog.frag",
+        "fragment/ShadowUtil.frag",
+        "fragment/DirectionLight.frag",
+        "fragment/PointLight.frag",
+        "fragment/SpotLight.frag",
+        "fragment/SimpleLight.frag"
+      ] 
+    },
+    {
+      "name": "NormalVectors",
+      "filenames": [
+        "vertex/VerticesNormal.vert",
+        "geometry/Normal.geom",
+        "fragment/Colored.frag"
+      ]
+    },
+    {
+      "name": "Explosive",
+      "filenames": [
+        "vertex/VerticesExplosive.vert",
+        "geometry/Explosive.geom",
+        "fragment/Fog.frag",
+        "fragment/DirectionLight.frag",
+        "fragment/PointLight.frag",
+        "fragment/SpotLight.frag",
+        "fragment/SimpleLight.frag"
+      ]
+    },
+		{ "name": "Skybox", "filenames": [ "vertex/Skybox.vert", "fragment/Skybox.frag" ] },
+		{ "name": "Font", "filenames": [ "vertex/Font.vert", "fragment/Font.frag" ] },
+		{ "name": "Glass", "filenames": [ "vertex/Glass.vert", "fragment/Glass.frag" ] },
+		{ "name": "Mirror", "filenames": [ "vertex/Mirror.vert", "fragment/Mirror.frag" ] },
+    { "name": "FrameBuffer", "filenames": [ "vertex/FrameBuffer.vert", "fragment/FrameBuffer.frag" ] },
+    {
+      "name": "SunDepth",
+      "filenames": [ "vertex/SunDepth.vert", "fragment/test1.frag" ]
+    },
+    { "name": "test1", "filenames": [ "vertex/SunDepth.vert", "fragment/test1.frag" ] },
+    { "name": "2DShapes", "filenames": [ "vertex/Vertices2D.vert", "fragment/Colored2D.frag" ] },
+    {   
+      "name": "Tesselation",
+      "filenames": [
+        "vertex/VerticesTess.vert",
+        "tesseval/evalution.teva",
+        "tesscontrol/control.tcon",
+        "fragment/Fog.frag",
+        "fragment/DirectionLight.frag",
+        "fragment/PointLight.frag",
+        "fragment/SpotLight.frag",
+        "fragment/SimpleLight.frag"
+      ]
+    },
+    { "name": "main", "filenames": [ "vertex/test.vert", "fragment/color.frag" ] }
+	]
+}

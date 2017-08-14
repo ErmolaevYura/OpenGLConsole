@@ -1,0 +1,41 @@
+# Exported from 3D Builder
+
+newmtl White
+Kd 1.000000 1.000000 1.000000
+
+newmtl Green
+Kd 0.129412 0.733333 0.298039
+
+newmtl Green
+Kd 0.129412 0.733333 0.298039
+
+newmtl White_0
+Kd 1.000000 1.000000 1.000000
+map_Kd grmarble.jpg
+
+newmtl White_1
+Kd 1.000000 1.000000 1.000000
+
+newmtl Turquoise
+Kd 0.000000 0.627451 0.909804
+
+newmtl White_2
+Kd 1.000000 1.000000 1.000000
+map_Kd purmesh.jpg
+
+newmtl Green
+Kd 0.129412 0.733333 0.298039
+
+newmtl White_3
+Kd 1.000000 1.000000 1.000000
+map_Kd wovenmat.jpg
+
+newmtl White_4
+Kd 1.000000 1.000000 1.000000
+
+newmtl Yellow
+Kd 0.996078 0.945098 0.000000
+
+newmtl White_5
+Kd 1.000000 1.000000 1.000000
+map_Kd parchmnt.jpg

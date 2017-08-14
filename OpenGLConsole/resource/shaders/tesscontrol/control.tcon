@@ -1,0 +1,46 @@
+#version 410 core
+#define id gl_InvocationID;
+/*
+gl_in[] { gl_Position; gl_PointSize; gl_ClipDistance[]; }
+gl_PathVerticesIn;
+gl_PrimitiveID;
+gl_InvocationID;
+
+gl_out[] { gl_Position; gl_PointSize; gl_ClipDistance[]; };
+gl_TessLevelInner[4]; //float
+gl_TessLevelOuter[2]; //float
+*/
+
+layout (vertices = 3) out;
+
+in VertexCS
+{
+	vec3 Position;
+	vec3 Normal;
+	vec2 TexCoords;
+} vertcs[];
+
+out VertexES 
+{
+	vec3 Position;
+	vec3 Normal;
+	vec2 TexCoords;
+} vertes[];
+
+uniform float tessLevel = 64;
+
+void main(void) {
+	vertes[gl_InvocationID].Position = vertcs[gl_InvocationID].Position;
+	vertes[gl_InvocationID].Normal = vertcs[gl_InvocationID].Normal;
+	vertes[gl_InvocationID].TexCoords = vertcs[gl_InvocationID].TexCoords;
+
+	if(0 == gl_InvocationID) {
+		gl_TessLevelInner[0] = tessLevel;
+		gl_TessLevelInner[1] = tessLevel;
+		gl_TessLevelOuter[0] = tessLevel;
+		gl_TessLevelOuter[1] = tessLevel;
+		gl_TessLevelOuter[2] = tessLevel;
+		gl_TessLevelOuter[3] = tessLevel;
+	}
+	gl_out[gl_InvocationID].gl_Position = gl_in[gl_InvocationID].gl_Position;
+}

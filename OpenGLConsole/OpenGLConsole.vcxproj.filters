@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="logs">
+      <UniqueIdentifier>{31ea688e-8218-4fa9-a6b0-705994252d01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\repository">
+      <UniqueIdentifier>{05013966-4377-4c68-943d-418ca17c2797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\repository\Logger">
+      <UniqueIdentifier>{921bd372-205f-4e0c-9105-0b1bffa8c605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\repository">
+      <UniqueIdentifier>{a1a397a2-990b-4c1e-859b-f88e0fb6c8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\repository\Logger">
+      <UniqueIdentifier>{176bada8-6d1f-4283-ab9d-8d3cfcc1ce80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\ogl">
+      <UniqueIdentifier>{b2e52365-cfdf-48c5-b2c6-7bfd93882090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ogl">
+      <UniqueIdentifier>{8566e9b7-16d0-46f4-9edd-a70eb7426d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\shaders">
+      <UniqueIdentifier>{2b1f8635-a57b-4753-9bd0-b8a7439778fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\shaders\vertex">
+      <UniqueIdentifier>{7907356c-ecdf-437e-972e-a4437fc3029d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\shaders\fragment">
+      <UniqueIdentifier>{b40b5fa5-a07a-4e8a-96f3-35f47f2012fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\shaders\geometric">
+      <UniqueIdentifier>{11c95a0d-433f-4699-ba5a-f29211d7ccc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\shaders\tesseval">
+      <UniqueIdentifier>{8c491e73-3eb5-48cf-bcbf-03793d5a6cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\shaders\tesscontrol">
+      <UniqueIdentifier>{07e7e45b-572d-4e7b-85f7-03adac564fd4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="app.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="repository\Logger\BaseLogger.h">
+      <Filter>Заголовочные файлы\repository\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="repository\Logger\ConsoleLogger.h">
+      <Filter>Заголовочные файлы\repository\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="repository\Logger\FileLogger.h">
+      <Filter>Заголовочные файлы\repository\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="repository\Logger\stdafx.h">
+      <Filter>Заголовочные файлы\repository\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="repository\core.h">
+      <Filter>Заголовочные файлы\repository</Filter>
+    </ClInclude>
+    <ClInclude Include="repository\stdafx.h">
+      <Filter>Заголовочные файлы\repository</Filter>
+    </ClInclude>
+    <ClInclude Include="repository\tstring.h">
+      <Filter>Заголовочные файлы\repository</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\glfw.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Camera.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\opengl.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\glew.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\glm.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\ogl.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\stdafx.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Exception.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Animation.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\ArrayBuffer.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\assimp.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\BufferObject.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Context.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Fog.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Font.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\FrameBuffer.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\geometry.h">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Light.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Material.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\MaterialManager.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Mesh.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Model.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\ModelManager.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Primitives.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Shader.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\ShaderManager.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Texture.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\TextureManager.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl\Transformation.hpp">
+      <Filter>Заголовочные файлы\ogl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenGLConsole.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="repository\Logger\ConsoleLogger.cpp">
+      <Filter>Файлы исходного кода\repository\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="repository\Logger\FileLogger.cpp">
+      <Filter>Файлы исходного кода\repository\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="repository\core.cpp">
+      <Filter>Файлы исходного кода\repository</Filter>
+    </ClCompile>
+    <ClCompile Include="app.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ogl\glfw.cpp">
+      <Filter>Файлы исходного кода\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="ogl\ogl.cpp">
+      <Filter>Файлы исходного кода\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="ogl\Exception.cpp">
+      <Filter>Файлы исходного кода\ogl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.json">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\color.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Colored.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\DirectionLight.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Fog.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\PointLight.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\SimpleLight.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\SpotLight.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Textured.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\geometry\test.geom">
+      <Filter>Файлы ресурсов\shaders\geometric</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\test.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\Vertices.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\VerticesExplosive.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\VerticesNormal.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\geometry\Explosive.geom">
+      <Filter>Файлы ресурсов\shaders\geometric</Filter>
+    </None>
+    <None Include="resource\shaders\geometry\Normal.geom">
+      <Filter>Файлы ресурсов\shaders\geometric</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\Skybox.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Skybox.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\Font.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Font.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\Glass.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Glass.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\Mirror.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Mirror.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\TexturedTess.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\tesseval\evalution.teva">
+      <Filter>Файлы ресурсов\shaders\tesseval</Filter>
+    </None>
+    <None Include="resource\shaders\tesscontrol\control.tcon">
+      <Filter>Файлы ресурсов\shaders\tesscontrol</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\VerticesTess.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\test1.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\test2.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\test3.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\test1.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\SunDepth.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\Colored2D.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+    <None Include="resource\shaders\vertex\Vertices2D.vert">
+      <Filter>Файлы ресурсов\shaders\vertex</Filter>
+    </None>
+    <None Include="resource\shaders\fragment\ShadowUtil.frag">
+      <Filter>Файлы ресурсов\shaders\fragment</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="logs\app_2017.08.01.log">
+      <Filter>logs</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

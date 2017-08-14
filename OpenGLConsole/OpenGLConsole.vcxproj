@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9E54D054-3924-40CE-B711-540C2AF828D0}</ProjectGuid>
+    <RootNamespace>OpenGLConsole</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\bin\Win32\Debug;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\rapidjson;K:\usr\vendors\include;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\freetype2;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include;$(IncludePath)</IncludePath>
+    <ReferencePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\static;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\Debug;$(ReferencePath)</ReferencePath>
+    <LibraryPath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\static;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\rapidjson;K:\usr\vendors\include;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\freetype2;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\bin\x64\Release;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\bin\x64\dynamic;$(ExecutablePath)</ExecutablePath>
+    <ReferencePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\dynamic;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\Release;$(ReferencePath)</ReferencePath>
+    <LibraryPath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\dynamic;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\Win32\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\rapidjson;K:\usr\vendors\include;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\freetype2;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\bin\x64\Debug;$(ExecutablePath)</ExecutablePath>
+    <ReferencePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\x64\static;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\x64\Debug;$(ReferencePath)</ReferencePath>
+    <LibraryPath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\x64\static;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\rapidjson;K:\usr\vendors\include;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include\freetype2;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\bin\x64\dynamic;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\bin\x64\Release;$(ExecutablePath)</ExecutablePath>
+    <ReferencePath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\x64\Release;$(ReferencePath)</ReferencePath>
+    <LibraryPath>K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib;K:\usr\Projects\VS2017\Projects\cpp\OpenGLConsole\OpenGLConsole\vendors\lib\x64\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glfw3dll.lib;glew32s.lib;soil.lib;assimp.lib;freetype26.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glfw3dll.lib;glew32s.lib;soil.lib;assimp.lib;freetype26.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glfw3dll.lib;glew32s.lib;soil.lib;assimp.lib;freetype26.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glfw3dll.lib;glew32s.lib;soil.lib;assimp.lib;freetype26.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="app.h" />
+    <ClInclude Include="ogl\Transformation.hpp" />
+    <ClInclude Include="ogl\Animation.hpp" />
+    <ClInclude Include="ogl\ArrayBuffer.hpp" />
+    <ClInclude Include="ogl\assimp.h" />
+    <ClInclude Include="ogl\BufferObject.hpp" />
+    <ClInclude Include="ogl\Camera.hpp" />
+    <ClInclude Include="ogl\Context.hpp" />
+    <ClInclude Include="ogl\Exception.h" />
+    <ClInclude Include="ogl\Fog.hpp" />
+    <ClInclude Include="ogl\Font.hpp" />
+    <ClInclude Include="ogl\FrameBuffer.hpp" />
+    <ClInclude Include="ogl\geometry.h" />
+    <ClInclude Include="ogl\glew.h" />
+    <ClInclude Include="ogl\glfw.h" />
+    <ClInclude Include="ogl\glm.h" />
+    <ClInclude Include="ogl\Light.hpp" />
+    <ClInclude Include="ogl\Material.hpp" />
+    <ClInclude Include="ogl\MaterialManager.hpp" />
+    <ClInclude Include="ogl\Mesh.hpp" />
+    <ClInclude Include="ogl\Model.hpp" />
+    <ClInclude Include="ogl\ModelManager.hpp" />
+    <ClInclude Include="ogl\ogl.h" />
+    <ClInclude Include="ogl\opengl.h" />
+    <ClInclude Include="ogl\Primitives.hpp" />
+    <ClInclude Include="ogl\Shader.hpp" />
+    <ClInclude Include="ogl\ShaderManager.hpp" />
+    <ClInclude Include="ogl\stdafx.h" />
+    <ClInclude Include="ogl\Texture.hpp" />
+    <ClInclude Include="ogl\TextureManager.hpp" />
+    <ClInclude Include="repository\core.h" />
+    <ClInclude Include="repository\Logger\BaseLogger.h" />
+    <ClInclude Include="repository\Logger\ConsoleLogger.h" />
+    <ClInclude Include="repository\Logger\FileLogger.h" />
+    <ClInclude Include="repository\Logger\stdafx.h" />
+    <ClInclude Include="repository\stdafx.h" />
+    <ClInclude Include="repository\tstring.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app.cpp" />
+    <ClCompile Include="ogl\Exception.cpp" />
+    <ClCompile Include="ogl\glfw.cpp" />
+    <ClCompile Include="ogl\ogl.cpp" />
+    <ClCompile Include="OpenGLConsole.cpp" />
+    <ClCompile Include="render.cpp" />
+    <ClCompile Include="repository\core.cpp" />
+    <ClCompile Include="repository\Logger\ConsoleLogger.cpp" />
+    <ClCompile Include="repository\Logger\FileLogger.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.json" />
+    <None Include="resource\shaders\fragment\color.frag" />
+    <None Include="resource\shaders\fragment\Colored.frag" />
+    <None Include="resource\shaders\fragment\Colored2D.frag" />
+    <None Include="resource\shaders\fragment\DirectionLight.frag" />
+    <None Include="resource\shaders\fragment\Fog.frag" />
+    <None Include="resource\shaders\fragment\Font.frag" />
+    <None Include="resource\shaders\fragment\Glass.frag" />
+    <None Include="resource\shaders\fragment\Mirror.frag" />
+    <None Include="resource\shaders\fragment\PointLight.frag" />
+    <None Include="resource\shaders\fragment\ShadowUtil.frag" />
+    <None Include="resource\shaders\fragment\SimpleLight.frag" />
+    <None Include="resource\shaders\fragment\Skybox.frag" />
+    <None Include="resource\shaders\fragment\SpotLight.frag" />
+    <None Include="resource\shaders\fragment\test1.frag" />
+    <None Include="resource\shaders\fragment\test2.frag" />
+    <None Include="resource\shaders\fragment\Textured.frag" />
+    <None Include="resource\shaders\fragment\TexturedTess.frag" />
+    <None Include="resource\shaders\geometry\Explosive.geom" />
+    <None Include="resource\shaders\geometry\Normal.geom" />
+    <None Include="resource\shaders\geometry\test.geom" />
+    <None Include="resource\shaders\tesscontrol\control.tcon" />
+    <None Include="resource\shaders\tesseval\evalution.teva" />
+    <None Include="resource\shaders\vertex\Font.vert" />
+    <None Include="resource\shaders\vertex\Glass.vert" />
+    <None Include="resource\shaders\vertex\Mirror.vert" />
+    <None Include="resource\shaders\vertex\Skybox.vert" />
+    <None Include="resource\shaders\vertex\SunDepth.vert" />
+    <None Include="resource\shaders\vertex\test.vert" />
+    <None Include="resource\shaders\vertex\test1.vert" />
+    <None Include="resource\shaders\vertex\test3.vert" />
+    <None Include="resource\shaders\vertex\Vertices.vert" />
+    <None Include="resource\shaders\vertex\Vertices2D.vert" />
+    <None Include="resource\shaders\vertex\VerticesExplosive.vert" />
+    <None Include="resource\shaders\vertex\VerticesNormal.vert" />
+    <None Include="resource\shaders\vertex\VerticesTess.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="logs\app_2017.08.01.log" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

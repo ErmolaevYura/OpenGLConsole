@@ -1,0 +1,53 @@
+#version 410 core
+
+/*
+gl_in[] { gl_Position; gl_PointSize; gl_ClipDistance; };
+gl_PathVerticesIn;
+gl_PrimitiveID;
+gl_TessCoord; //(u,v,w)
+gl_TessLevelInner[4]; //(float)
+gl_TessLevelOuter[2]; //(float)
+
+gl_Position;
+gl_PointSize;
+gl_ClipDistance[];
+*/
+
+layout(triangles, equal_spacing) in;
+
+uniform mat4 projection;
+uniform mat4 view;
+uniform mat4 model;
+uniform sampler2D heightmap;
+
+// from control shader
+in VertexES 
+{
+	vec3 Position;
+	vec3 Normal;
+	vec2 TexCoords;
+} vertes[];
+
+// to fragment shader
+out VertexFS
+{
+	vec3 Position;
+	vec3 Normal;
+	vec2 TexCoords;
+} vertfs;
+
+vec2 interpolate2D(vec2 v0, vec2 v1, vec2 v2) {
+	return vec2(gl_TessCoord.x) * v0 + vec2(gl_TessCoord.y) * v1 + vec2(gl_TessCoord.z) * v2;
+}
+vec3 interpolate3D(vec3 v0, vec3 v1, vec3 v2) {
+	return vec3(gl_TessCoord.x) * v0 + vec3(gl_TessCoord.y) * v1 + vec3(gl_TessCoord.z) * v2;
+}
+
+void main(void) {
+	vertfs.Position = interpolate3D(vertes[0].Position, vertes[1].Position, vertes[2].Position);
+	vertfs.Normal = normalize(interpolate3D(vertes[0].Normal, vertes[1].Normal, vertes[2].Normal));
+	vertfs.TexCoords = interpolate2D(vertes[0].TexCoords, vertes[1].TexCoords, vertes[2].TexCoords);
+	gl_Position = projection * view * model * ( 
+		vec4(interpolate3D(gl_in[0].gl_Position.xyz, gl_in[1].gl_Position.xyz, gl_in[2].gl_Position.xyz), 1.0) -
+		vec4(vertfs.Normal, 1) * (texture(heightmap, vertfs.TexCoords) / 6.0));
+}
